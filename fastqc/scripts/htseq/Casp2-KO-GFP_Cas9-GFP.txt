@@ -1,0 +1,6 @@
+Casp2KO.GFP	1-Casp2-KO-GFP	/data/htseq/output/1-Casp2-KO-GFP/1-Casp2-KO-GFP_S40_R1_001_htseq_count.txt
+Casp2KO.GFP	2-Casp2-KO-GFP	/data/htseq/output/2-Casp2-KO-GFP/2-Casp2-KO-GFP_S41_R1_001_htseq_count.txt
+Casp2KO.GFP	3-Casp2-KO-GFP	/data/htseq/output/3-Casp2-KO-GFP/3-Casp2-KO-GFP_S42_R1_001_htseq_count.txt
+Cas9.GFP	1-Cas9-GFP	/data/htseq/output/1-Cas9-GFP/1-Ca9-GFP_S37_R1_001_htseq_count.txt
+Cas9.GFP	2-Cas9-GFP	/data/htseq/output/2-Cas9-GFP/2-Cas9-GFP_S38_R1_001_htseq_count.txt
+Cas9.GFP	3-Cas9-GFP	/data/htseq/output/3-Cas9-GFP/3-Cas9-GFP_S39_R1_001_htseq_count.txt

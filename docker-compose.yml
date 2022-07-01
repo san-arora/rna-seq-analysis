@@ -1,0 +1,50 @@
+version: "3"
+volumes:
+  rna-seq-shared:
+services:
+  rna-seq-fastqc:
+    build:
+      context: ./fastqc
+    container_name: rna-seq-fastqc
+    volumes:
+      - rna-seq-shared:/data
+  rna-seq-cutadapt:
+    build:
+      context: ./cutadapt
+    container_name: rna-seq-cutadapt
+    volumes:
+      - rna-seq-shared:/data
+    # depends_on:
+    #   - "rna-seq-fastqc"
+  rna-seq-hisat2:
+    build:
+      context: ./hisat2
+    container_name: rna-seq-hisat2
+    volumes:
+      - rna-seq-shared:/data
+    # depends_on:
+    #   - "rna-seq-cutadapt"
+  rna-seq-samtools:
+    build:
+      context: ./samtools
+    container_name: rna-seq-samtools
+    volumes:
+      - rna-seq-shared:/data
+    # depends_on:
+    #   - "rna-seq-hisat2"
+  rna-seq-picardtools:
+    build:
+      context: ./picardtools
+    container_name: rna-seq-picardtools
+    volumes:
+      - rna-seq-shared:/data
+    # depends_on:
+    #   - "rna-seq-samtools"
+  rna-seq-deg-analysis:
+    build:
+      context: ./deg-analysis
+    container_name: rna-seq-deg-analysis
+    volumes:
+      - rna-seq-shared:/data
+    # depends_on:
+    #   - "rna-seq-picardtools"

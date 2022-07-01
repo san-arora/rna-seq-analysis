@@ -1,0 +1,18 @@
+# commands
+docker-compose build rna-seq-fastqc
+docker-compose up rna-seq-fastqc
+
+docker-compose build rna-seq-cutadapt
+docker-compose up rna-seq-cutadapt
+
+docker-compose build rna-seq-hisat2
+docker-compose up rna-seq-hisat2
+
+docker-compose build rna-seq-samtools
+docker-compose up rna-seq-samtools
+
+docker-compose build rna-seq-picardtools
+docker-compose up rna-seq-picardtools
+
+docker-compose build rna-seq-deg-analysis
+docker-compose up rna-seq-deg-analysis

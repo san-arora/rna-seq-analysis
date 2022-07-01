@@ -1,0 +1,3 @@
+fastqc/dataset/*
+fastqc/gencode-annotation-v7/*
+fastqc/reference-genome/*
