@@ -1,3 +1,7 @@
+1. Add all the samples (fastq files) in their own folders under fastqc/dataset/{sample_name}/{sample_fastq_file}
+2. Add reference genomes under fastq/reference-genome/{genome_name}/{reference_genome_file} 
+
+
 # commands
 docker-compose build rna-seq-fastqc
 docker-compose up rna-seq-fastqc
